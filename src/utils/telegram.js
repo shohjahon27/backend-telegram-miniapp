@@ -11,8 +11,7 @@ export const validateTelegramData = (initData) => {
     const dataCheckString = Array.from(params.entries())
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([key, value]) => `${key}=${value}`)
-      .join('
-')
+      .join('')
 
     const secretKey = crypto.createHmac('sha256', 'WebAppData')
       .update(process.env.BOT_TOKEN)
