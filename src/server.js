@@ -7,13 +7,14 @@ import morgan from 'morgan'
 import rateLimit from 'express-rate-limit'
 
 import authRoutes from './routes/auth.routes.js';
-import productRoutes from './src/routes/product.routes.js'
-import vendorRoutes from './src/routes/vendor.routes.js'
-import orderRoutes from './src/routes/order.routes.js'
-import reviewRoutes from './src/routes/review.routes.js'
-import adminRoutes from './src/routes/admin.routes.js'
-import categoryRoutes from './src/routes/category.routes.js'
-import { errorHandler } from './src/middleware/error.middleware.js'
+// ✅ Correct - no /src/ prefix
+import productRoutes from './routes/product.routes.js'
+import vendorRoutes from './routes/vendor.routes.js'
+import orderRoutes from './routes/order.routes.js'
+import reviewRoutes from './routes/review.routes.js'
+import adminRoutes from './routes/admin.routes.js'
+import categoryRoutes from './routes/category.routes.js'
+import { errorHandler } from './middleware/error.middleware.js'
 
 dotenv.config()
 
