@@ -6,7 +6,7 @@ import helmet from 'helmet'
 import morgan from 'morgan'
 import rateLimit from 'express-rate-limit'
 
-import authRoutes from './src/routes/auth.routes.js'
+import authRoutes from './routes/auth.routes.js';
 import productRoutes from './src/routes/product.routes.js'
 import vendorRoutes from './src/routes/vendor.routes.js'
 import orderRoutes from './src/routes/order.routes.js'
